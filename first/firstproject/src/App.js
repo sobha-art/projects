@@ -8,9 +8,9 @@ import CategoryContainerComponent from './components/category-container/category
 function App() {
   return (
     <div className="App">
-      <HomePage />
+     
      <CategoryContainerComponent />
-      <CategoryItem />
+      
       
     
     </div>

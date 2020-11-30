@@ -6,7 +6,7 @@ class CategoryContainerComponent extends Component{
     constructor(){
         super();
         this.state={
-            courseCategory : [
+            courseCategories : [
                 
             ]
         };

@@ -1,8 +1,29 @@
 [
     {
         "title":"html course",
-        "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzRgD19qMdjAtHrNyJU4b4mi42s8GqGvz8Mw&usqp=CAU",
+        "imageUrl":"https://html.com/wp-content/uploads/html-hpg-featured-new.png",
         "id":"1",
+        "linkUrl":"course-category/html"
+    },
+    {
+        "title":"java course",
+        "imageUrl":"https://stackify.com/wp-content/uploads/2018/09/Java-Debugging-Tips-1280x720.jpg",
+        "id":"2",
+        "linkUrl":"course-category/html"
+    },{
+        "title":"React course",
+        "imageUrl":"https://www.inovex.de/blog/wp-content/uploads/2022/01/one-year-of-react-native.png",
+        "id":"3",
+        "linkUrl":"course-category/html"
+    },{
+        "title":"Python course",
+        "imageUrl":"https://cdn.mindmajix.com/courses/python-training.png",
+        "id":"4",
+        "linkUrl":"course-category/html"
+    },{
+        "title":"Datascience course",
+        "imageUrl":"https://d1m75rqqgidzqn.cloudfront.net/wp-data/2019/09/11134058/What-is-data-science-2.jpg",
+        "id":"5",
         "linkUrl":"course-category/html"
     }
 ]

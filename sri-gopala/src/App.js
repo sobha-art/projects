@@ -1,26 +1,40 @@
 
 import React, {Component} from 'react';
+import './mystyles.css';
+import { ProductList } from './components/ProductList';
 import './App.css';
 
 class App extends Component{
 constructor(){
 super();
-this.state={products:[] };
+this.state={products:[],
+            searchValue:'' };
 };
 componentDidMount(){
-  fetch('https://fir-project-5445f.web.app/prodcuts.json')
+  fetch('https://fir-project-5445f.web.app/products.json')
   .then(response=>response.json())
   .then(items=>this.setState({products:items}));
 }
 render(){
-return(
-<div className="App">
-{/* {this.state.products.map(product=>(<div><h1>{product.name}</h1>
-                                        <h2>{product.Price}</h2></div>))} */}
+  const {products,searchValue}=this.state;
+  const filteredProducts = products.filter(product=>product.name.toLowercase().includes(searchValue
+    .toLowercase()));
 
-{this.state.products.map(product=>
-(<div key={product.id}><h1>{product.name}</h1>
-     <h2>{product.Price}</h2></div>))}
+return(
+  <div className="App">
+    <h1 className="shri-gopala-logo">shri Gopala Soaps</h1>
+    <div>
+      <input 
+      type = 'search' 
+      placeholder='search products'
+      className='serach-bar'
+      onChange={e=>{
+        this.setState({searchValue:e.target.value});
+      }}/>
+    </div>
+<ProductList products={filteredProducts}>
+
+     </ProductList>
 </div>
 );
 }

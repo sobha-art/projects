@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+h1{
+  color:green;
+}
+h2{
+  color:blue;
+}
+.shri-gopala-logo{
+  font-family: 'Carter One';
+  font-size:70px;
+  color:slateblue;
+  
+}
